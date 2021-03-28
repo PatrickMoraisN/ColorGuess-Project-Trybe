@@ -1,9 +1,9 @@
 # ColorGuess Project
 ## A Trybe study project that create and modifies elements through DOM.
 
-<div>
-  <img src="gifs/color1.gif" alt="demo-web" height="350">
-  <img src="gifs/colo2.gif" alt="demo-web" height="350">
+<div align = 'center'>
+  <img src="gifs/color1.gif" alt="demo-web" height="400">
+  <img src="gifs/colo2.gif" alt="demo-web" height="400">
 </div>
 <br><br>
 
