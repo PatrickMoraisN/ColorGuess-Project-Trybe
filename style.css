@@ -1,11 +1,89 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
 .balls {
+  margin-top: 30px;
+  margin-bottom: 30px;
   display: flex;
+  justify-content: center;
 }
 
 .ball {
-  width: 30px;
-  height: 30px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   border: 2px solid black;
   margin-left: 20px;
+}
+
+.ball:hover{
+  box-shadow: 0 0 10px rgb(129, 219, 219);
+}
+
+button{
+  margin-top: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: 5px;
+  background: linear-gradient(rgb(73, 180, 2), rgb(28, 119, 0));
+  color: white;
+}
+
+button:hover{
+  box-shadow: 0 0 10px rgb(121, 216, 216);
+}
+
+.container{
+  background: linear-gradient(rgb(73, 120, 223), rgb(33, 57, 109));
+  padding: 40px;
+  margin-left: 30%;
+  margin-right: 30%;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+#title{
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+#rgb-color{
+  font-size: 30px;
+  text-shadow: 0 0 15px rgb(200, 228, 228);
+}
+
+.container span {
+  font-size: 30px;
+}
+
+.pontos{
+  display: flex;
+  justify-content: center;
+}
+
+#score{
+  font-size: 30px;
+  color: rgb(218, 6, 6);
+  text-shadow: 1px 1px 6px whitesmoke;
+}
+
+#answer{
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+#pink{
+  background: linear-gradient(rgb(231, 135, 151), rgb(167, 92, 105));
+}
+
+#blue{
+  background: linear-gradient(rgb(67, 78, 223), rgb(22, 30, 141));
+}
+
+#black{
+  background: linear-gradient(rgb(48, 48, 48), rgb(24, 24, 24));
 }

@@ -1,4 +1,8 @@
 const rgbColorId = '#rgb-color';
+const backgroundPink = 'linear-gradient(rgb(231, 135, 151), rgb(167, 92, 105))'
+const backgroundBlue = 'linear-gradient(rgb(67, 78, 223), rgb(22, 30, 141))'
+const backgroundBlack = 'linear-gradient(rgb(48, 48, 48), rgb(24, 24, 24))'
+const container = document.querySelector('.container')
 
 function generateTextRGB() {
   const random = `(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)},`
@@ -60,9 +64,36 @@ function initGame() {
   });
 }
 
+const changePink = () => {
+  const pinkBtn = document.getElementById('pink');
+  pinkBtn.addEventListener('click', () => {
+    document.querySelector('body').style.color = 'black'
+    container.style.background = backgroundPink
+  })
+}
+
+const changeBlue = () => {
+  const blueBtn = document.getElementById('blue');
+  blueBtn.addEventListener('click', () => {
+    document.querySelector('body').style.color = 'black'
+    container.style.background = backgroundBlue
+  })
+}
+
+const changeBlack = () => {
+  const blackBtn = document.getElementById('black');
+  blackBtn.addEventListener('click', () => {
+    document.querySelector('body').style.color = 'white'
+    container.style.background = backgroundBlack
+  })
+}
+
 window.onload = () => {
   initGame();
   generateTextRGB();
   generateColors();
   challenger();
+  changePink();
+  changeBlue();
+  changeBlack();
 };

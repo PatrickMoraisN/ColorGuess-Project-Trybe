@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,24 +8,32 @@
   <link rel="stylesheet" href="style.css">
   <title>Project Color Guess</title>
 </head>
+
 <body>
-  <h1 id="title">Adivinha a cor!</h1>
-  <p id="rgb-color"></p>
-  <p id="score">0</p>
+  <div class="container">
+    <h1 id="title">Adivinha a cor!</h1>
+    <p id="rgb-color"></p><br>
+    <div class="pontos">
+      <span>pontos: </span><p id="score"> 0</p>
+    </div>
 
+    <div class="balls">
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+      <div class="ball"></div>
+    </div>
 
-  <div class="balls">
-    <div class="ball"></div>
-    <div class="ball"></div>
-    <div class="ball"></div>
-    <div class="ball"></div>
-    <div class="ball"></div>
-    <div class="ball"></div>
+    <p id="answer">Escolha uma cor!</p>
+    <button id="reset-game">START / RESET</button>
   </div>
 
-  <p id="answer">Escolha uma cor</p>
-  <button id="reset-game">iniciar/reiniciar o jogo</button>
-
+  <button id="pink">background PINK</button>
+  <button id="blue">background BLUE</button>
+  <button id="black">background BLACK</button>
   <script src="script.js"></script>
 </body>
+
 </html>
